@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳转网址</title>
+    <script type="text/javascript">
+        function TxtToChange() {
+            var url = document.getElementById("_url").value;
+            switch (url) {
+                case "https://www.baidu.com/":
+                    document.getElementById("txt").value = url;
+                    break;
+                case "http://www.sosoapi.com/":
+                    document.getElementById("txt").value = url;
+                    break;
+                case "https://www.csdn.net/":
+                    document.getElementById("txt").value = url;
+                    break;
+            }
+        }
+
+        function GoToUrl(){
+            location =  document.getElementById("txt").value;
+
+        }
+    </script>
+</head>
+
+<body>
+<form>
+    <select id="_url" onchange="TxtToChange()">
+        <option selected="selected">请选择</option>
+        <option value="https://www.baidu.com/">百度</option>
+        <option value="http://www.sosoapi.com/">sosoApi</option>
+        <option value="https://www.csdn.net/">CSDN</option>
+    </select>
+
+    <input type="text" id="txt" />
+    <input type="button" value="确认跳转" onclick="GoToUrl()">
+</form>
+</body>
+
+</html>

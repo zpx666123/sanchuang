@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <style>
+        #slider{
+            width: 1000px;
+            height: 500px;
+            top: -1280px;
+            right: 150px;
+            position: relative;
+            border: solid;
+            background-image: url("slider1.jpg");
+
+
+        }
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+        #logo{
+            font-size: 100px;
+            font-family: "宋体";
+            font-weight: bold;
+
+            width: 300px;
+            height:200px;
+
+        }
+
+
+        #bg1{
+            width: 430px;
+            height: 70px;
+            position: relative;
+            left: 350px;
+            top: -190px;
+        }
+        #se3{
+            position: relative;
+            left:350px;
+            top:-1350px;
+        }
+        #regis{
+            height: 60px;
+            width: 60px;
+        }
+        #tubiao{
+            position: relative;
+            left:800px;
+            top: -250px;
+        }
+        #zhuce1{
+            height: 60px;
+            width: 60px;
+        }
+        #zhuce{
+            position: relative;
+            left: 880px;
+            top: -330px;
+
+
+        }
+        #dingdan{
+            position: relative;
+            left: 950px;
+            top: -415px;
+        }
+        #dingdan1{
+            width: 60px;
+            height: 60px;
+        }
+        #pic2{
+            height: 170px;
+            width: 350px;
+           background-image: url("fight1.jpg");
+            font-family: "宋体";
+            font-size: 40px;
+            color: aqua;
+        }
+        #fight{
+            height: 100px;
+            width: 350px;
+        }
+        #picbig{
+            width: 200px;
+            height: 60px;
+        }
+        #tubiao2{
+            position: relative;
+            left: 1020px;
+            top:-500px
+        }
+        #dict1{
+            width: 430px;
+            height: 70px;
+        }
+        #dic1{
+            position: relative;
+            left: 800px;
+            top:-470px
+        }
+        #sli1{
+            position: relative;
+            left: 800px;
+            top:-465px;
+            font-size: 60px;
+            font-family: "Adelle Sans Devanagari";
+            color: #fbc2eb;
+            background-image: url("love.JPG");
+            border: aqua dashed;
+
+        }
+        #sli3{
+            width: 350px;
+            height: 800px;
+            position: relative;
+            left: 860px;
+            top:-450px;
+        }
+
+
+
+
+    </style>
+    <script type="text/javascript">
+        function TxtToChange() {
+            var url = document.getElementById("_url").value;
+            switch (url) {
+                case "https://www.ctrip.com/?sid=155952&allianceid=4897&ouid=index":
+                    document.getElementById("txt").value = url;
+                    break;
+                case "https://ditu.amap.com/":
+                    document.getElementById("txt").value = url;
+                    break;
+                case "https://www.csdn.net/":
+                    document.getElementById("txt").value = url;
+                    break;
+            }
+        }
+
+        function GoToUrl(){
+            location =  document.getElementById("txt").value;
+
+        }
+    </script>
+</head>
+<body>
+<div >
+    <div id="logo">
+        非遗<br>在线
+    </div>
+    <div id="bg1">
+        <input  id="se1" type="text" placeholder="输入您的目的地">
+        <input type="button" id="se2" value="搜索"><br><br>
+        <div id="pic2">
+           <img  id="fight" src="fight.JPG">
+            人生就是一场旅行
+
+        </div>
+
+    </div>
+
+
+</div>
+<div id="tubiao">
+    <div id="denglu">
+        <img id="regis" src="logo1.JPG"><br>
+        <a href="login.html">请登录</a>
+
+    </div>
+
+</div>
+    <div id="zhuce">
+        <img id="zhuce1" src="zhuce.JPG"><br>
+        <a href="zhuce.html">请注册</a>
+    </div>
+    <div id="dingdan">
+        <img id="dingdan1" src="订单.JPG"><br>
+        &nbsp;订单
+    </div>
+<div id="tubiao2">
+    <img  id="picbig"src="tubiao2.png">
+</div>
+<div id="dic1">
+    <img id="dict1" src="dic1.jpeg">
+</div>
+<div id="sli1">
+    旅行伴侣匹配
+</div>
+<div id="sli2">
+    <img id="sli3"src="sli3.png">
+</div>
+
+<script>
+    var tubiao1=document.getElementById("regis");
+    tubiao1.addEventListener("click",function () {
+        location="login.html";
+    })
+    var zhu=document.getElementById("zhuce1");
+    zhu.addEventListener("click",function () {
+        location="zhuce.html";
+    })
+</script>
+
+
+        <html>
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport"
+                  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                    <title>Document</title>
+    </head>
+    <body>
+
+    </body>
+    </html>
+</script>
+<div id="se3">
+    <form>
+        <select id="_url" onchange="TxtToChange()">
+            <option selected="selected">请选择您需要的服务</option>
+            <option value="https://www.ctrip.com/?sid=155952&allianceid=4897&ouid=index">住宿</option>
+            <option value="https://ditu.amap.com/">出行与车况</option>
+            <option value="https://www.csdn.net/">CSDN</option>
+        </select>
+
+        <input type="text" id="txt" />
+        <input  type="button" id="btn1" value="确认跳转" onclick="GoToUrl()">
+    </form>
+
+</div>
+<div id="slider">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="pic1.3.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pic1.4.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pic1.5.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pic1.6.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pic1.7.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pic1.8.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pic1.9.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pic.10.JPG" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pic.11.JPG" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<script src="swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+
+</body>
+</html>
